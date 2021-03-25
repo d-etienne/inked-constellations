@@ -1,19 +1,41 @@
-body {
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#contentBox {
     display: flex;
     background-color: #110502;
     position:relative;
     flex-direction: column;
     box-sizing: border-box;
+    font-family: athelas, serif;
 }
 
 #nav {
     /* background-color: orange; */
     display: flex;
+    /* position: fixed; */
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
     height: 10vh;
     font-size: 1.5rem;
+    font-family: athelas, serif;
+    background-color:  #110502;;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav img {
+    height: 10vh;
+    width: 20vh;
+    object-fit: cover;
+    padding: 2vh;
 }
  
 #nav a {
@@ -30,6 +52,7 @@ body {
 #artists{
     display: flex;
     flex-direction: column;
+    font-family: athelas, serif;
 }
 .row {
     height: 50vh;
@@ -41,16 +64,21 @@ body {
     
 }
 .artist{
-    background-color: #FC5E13;
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 2rem;
 }
 
 .row .artist:nth-child(1) {
     background-color: #F1C965;
+}
+
+.row .artist:nth-child(2) {
+    background-color: #FC5E13;
+    text-align: right;
 }
 
 .artist img {
@@ -85,10 +113,12 @@ body {
 #policies {
     position: relative;
     display: flex;
-   
+    height: 125vh;
+    font-family: athelas, serif;
 }
 
 #title {
+    box-sizing: border-box;
     color: #FFE8BB; 
     background-color: #FC5E13; 
     padding: 5vh;
@@ -96,33 +126,134 @@ body {
     text-align: center;
     position: absolute;
     height: 100%;
-    right: 10vh;
+    right:0;
     display: inline-block;
     writing-mode: vertical-rl;
     text-orientation: sideways;
+    letter-spacing: 0.5rem;
+    
 }
 
 #faq {
     box-sizing: border-box;
     color: #FFE8BB; 
     display: inline-block;  
-    padding: 10vh;
+    padding: 5vh;
+    height: 100%;
+    width: 80%;
+}
 
+#faq p, #faq ul {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#faq h1 {
+    letter-spacing: 0.15rem;
+    
 }
 
 .text {
     padding: 5vh;
+    
+}
+
+#slider {
+    
+    /* background-color: burlywood; */
+    width: 100%;
+    position: relative;
+    height: 90vh;
+}
+
+.slide {
+    position: relative;
+    color: #FFE8BB;
+    /* background-color: chocolate; */
+    /* border-color: darkgreen; */
+    /* border-style: solid; */
+    height: 85vh;
+    text-align: center;
+}
+
+.slide img {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover; 
+    padding: 5vh;
+    width: 90%;
+}
+
+.slideText {
+    background-color: #FC5E13; 
+    position: absolute;
+    font-weight: 700;
+    font-style: normal;
+    top: 25vh;
+    right: 45vh;
+    font-size: 3rem;
+    padding: 2vh;
+    width: 50%;
+    /* text-align: center; */
+    letter-spacing: 0.5rem;
+    box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+#slide2 {
+    object-position: center;
+}
+
+#slide4 {
+    object-position: top center;
 }
 
 #contact {
     display: flex;
     position:relative;
-    background-color: #110502;
-    padding: 5vh;
+    /* background-color: #110502; */
+    padding: 8vh;
     color: #FFE8BB; 
     font-size: 1.5rem;
+    height: 70vh;
+    justify-content: space-around;
+    font-family: athelas, serif;
+    align-content: center;
+
 }
+
 .text img{
-    height: 25vh;
+    height: 22vh;
     width: 50vh; 
+    object-fit: cover;
+    object-position: top;
 }
+
+.text {
+    /* background-color: darksalmon; */
+    letter-spacing: 0.2rem;
+}
+
+
+#appointment {
+    color: #FFE8BB; 
+    background-color: #FC5E13;
+    padding: 1vh;
+    text-decoration: none;
+}
+
+#appointment:hover {
+    opacity: 0.8 ;
+}
+
+.row a {
+    color: #FFE8BB;
+    text-decoration: none;
+    background-color: #110502;
+    padding: 0.5em;
+}
+
+.row a:hover {
+    opacity: 0.8;
+}
+
