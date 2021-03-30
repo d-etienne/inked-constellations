@@ -13,29 +13,28 @@ html, body {
 }
 
 #nav {
-    /* background-color: orange; */
+    box-sizing: border-box;
     display: flex;
-    /* position: fixed; */
+    position: fixed;
+    z-index: +99;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    height: 10vh;
-    font-size: 1.5rem;
-    font-family: athelas, serif;
-    background-color:  #110502;;
+    background-color:  #110502;
 }
 
 #links {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-size: 1.5rem;
+    font-family: athelas, serif;
 }
 
 #nav img {
-    height: 10vh;
-    width: 20vh;
+    height: 15vh;
     object-fit: cover;
-    padding: 2vh;
 }
  
 #nav a {
@@ -44,12 +43,13 @@ html, body {
     color: #FFE8BB;
 }
 
-#nav a:hover {
+#links a:hover {
     padding: 0.5em;
     border-bottom: 2px solid #F1C965;
 }
 
 #artists{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     font-family: athelas, serif;
@@ -159,20 +159,16 @@ html, body {
 }
 
 #slider {
-    
-    /* background-color: burlywood; */
+    margin-top: 14vh;
     width: 100%;
     position: relative;
     height: 90vh;
 }
 
 .slide {
-    position: relative;
     color: #FFE8BB;
-    /* background-color: chocolate; */
-    /* border-color: darkgreen; */
-    /* border-style: solid; */
     height: 85vh;
+    width: 100%;
     text-align: center;
 }
 
@@ -182,7 +178,7 @@ html, body {
     height: 100%;
     object-fit: cover; 
     padding: 5vh;
-    width: 90%;
+    width: 95%;
 }
 
 .slideText {
@@ -195,7 +191,6 @@ html, body {
     font-size: 3rem;
     padding: 2vh;
     width: 50%;
-    /* text-align: center; */
     letter-spacing: 0.5rem;
     box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25);
 }
@@ -211,7 +206,6 @@ html, body {
 #contact {
     display: flex;
     position:relative;
-    /* background-color: #110502; */
     padding: 8vh;
     color: #FFE8BB; 
     font-size: 1.5rem;
@@ -230,7 +224,6 @@ html, body {
 }
 
 .text {
-    /* background-color: darksalmon; */
     letter-spacing: 0.2rem;
 }
 
